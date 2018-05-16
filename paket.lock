@@ -6,6 +6,10 @@ NUGET
       System.Configuration.ConfigurationManager (>= 4.4) - restriction: && (< net45) (>= netstandard2.0)
     Fantomas (2.7.1)
       FSharp.Compiler.Service (>= 22.0.3) - restriction: || (>= net45) (>= netstandard2.0)
+    FParsec (1.0.3)
+      FSharp.Core (>= 4.0.0.1) - restriction: >= net40
+      FSharp.Core (>= 4.2.3) - restriction: && (< net40) (>= netstandard1.6)
+      NETStandard.Library (>= 1.6.1) - restriction: && (< net40) (>= netstandard1.6)
     FSharp.Compiler.Service (22.0.3)
       FSharp.Core (>= 4.1.18) - restriction: || (>= net45) (>= netstandard2.0)
       Microsoft.DiaSymReader (>= 1.1) - restriction: || (>= net45) (>= netstandard2.0)
@@ -73,7 +77,7 @@ NUGET
       Microsoft.NETCore.Platforms (>= 2.0) - restriction: >= netcoreapp2.0
       System.Security.AccessControl (>= 4.4) - restriction: || (>= monoandroid) (>= monotouch) (&& (< net46) (>= netstandard2.0)) (>= net461) (>= netcoreapp2.0) (>= xamarinios) (>= xamarinmac) (>= xamarintvos) (>= xamarinwatchos)
       System.Security.Principal.Windows (>= 4.4) - restriction: || (>= monoandroid) (>= monotouch) (&& (< net46) (>= netstandard2.0)) (>= net461) (>= netcoreapp2.0) (>= xamarinios) (>= xamarinmac) (>= xamarintvos) (>= xamarinwatchos)
-    NETStandard.Library (2.0.3) - restriction: || (&& (< net20) (>= net45)) (&& (< net20) (>= netstandard2.0)) (&& (>= net45) (< netstandard2.0))
+    NETStandard.Library (2.0.3) - restriction: || (&& (< net20) (>= net45)) (&& (< net20) (>= netstandard2.0)) (&& (< net40) (>= netstandard1.6)) (&& (>= net45) (< netstandard2.0))
       Microsoft.NETCore.Platforms (>= 1.1) - restriction: || (&& (>= net45) (< netstandard1.3)) (&& (< net45) (>= netstandard1.1) (< netstandard1.2) (< win8)) (&& (< net45) (>= netstandard1.2) (< netstandard1.3) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.3) (< netstandard1.4) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.4) (< netstandard1.5) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.5) (< netstandard1.6) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.6) (< netstandard2.0) (< win8) (< wpa81)) (&& (< net45) (>= netstandard2.0)) (&& (>= net46) (< netstandard1.4)) (>= net461) (>= netcoreapp2.0) (&& (>= netstandard1.0) (< portable-net45+win8+wpa81)) (&& (< netstandard1.0) (>= portable-net45+win8) (< win8)) (&& (< netstandard1.0) (< portable-net45+win8) (>= portable-net45+win8+wpa81)) (&& (< netstandard1.0) (>= portable-net45+win8+wp8+wpa81) (< portable-net45+win8+wpa81)) (&& (< netstandard1.0) (>= win8)) (&& (< netstandard1.3) (< win8) (>= wpa81)) (&& (< netstandard1.5) (>= uap10.0)) (>= uap10.1) (>= wp8)
       Microsoft.Win32.Primitives (>= 4.3) - restriction: || (&& (< net45) (>= netstandard1.3) (< netstandard1.4) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.4) (< netstandard1.5) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.5) (< netstandard1.6) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.6) (< netstandard2.0) (< win8) (< wpa81)) (&& (>= net46) (< netstandard1.4)) (&& (< netstandard1.5) (>= uap10.0) (< uap10.1))
       System.AppContext (>= 4.3) - restriction: || (&& (< net45) (>= netstandard1.3) (< netstandard1.4) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.4) (< netstandard1.5) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.5) (< netstandard1.6) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.6) (< netstandard2.0) (< win8) (< wpa81)) (&& (>= net46) (< netstandard1.4)) (&& (< netstandard1.5) (>= uap10.0) (< uap10.1))
@@ -491,6 +495,10 @@ NUGET
     System.ValueTuple (4.4) - restriction: >= net45
       NETStandard.Library (>= 1.6.1) - restriction: && (< monoandroid) (< monotouch) (< net461) (>= netstandard1.0) (< netstandard2.0) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)
     System.Xml.ReaderWriter (4.3.1) - restriction: || (&& (>= net45) (< netstandard1.5) (>= uap10.0)) (&& (>= net45) (< portable-net45+win8+wpa81)) (&& (>= net46) (< netstandard1.4))
+  remote: ./BleedingEdgeNuget
+    Froto.Parser (0.6.1)
+      FParsec (>= 1.0.3)
+    Froto.Serialization (0.6.1)
 GITHUB
   remote: 7sharp9/FSharp.TypeProviders.SDK
     src/ProvidedTypes.fs (fd809a74954b4a7d89ce5232f7ee09c775fe0c8f)

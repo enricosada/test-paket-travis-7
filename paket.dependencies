@@ -13,3 +13,7 @@ github 7sharp9/FsAst AstCreate.fs
 github 7sharp9/FsAst PrintAstInfo.fs
 github 7sharp9/FsAst FormatFs.fs
 github 7sharp9/FsAst CreateAst.fs
+
+source ./BleedingEdgeNuget
+nuget Froto.Parser 0.6.1
+nuget Froto.Serialization 0.6.1
