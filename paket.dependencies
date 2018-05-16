@@ -1,0 +1,15 @@
+source https://www.nuget.org/api/v2
+nuget ArgU
+nuget FSharp.Compiler.Service
+nuget FSharp.Core
+nuget Fantomas 2.7.1
+
+github 7sharp9/FSharp.TypeProviders.SDK src/ProvidedTypes.fsi
+github 7sharp9/FSharp.TypeProviders.SDK src/ProvidedTypes.fs
+github 7sharp9/FSharp.TypeProviders.SDK src/ProvidedTypesTesting.fs
+
+github 7sharp9/FsAst AstRcd.fs
+github 7sharp9/FsAst AstCreate.fs
+github 7sharp9/FsAst PrintAstInfo.fs
+github 7sharp9/FsAst FormatFs.fs
+github 7sharp9/FsAst CreateAst.fs
