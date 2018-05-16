@@ -1,0 +1,9 @@
+language: csharp
+
+mono: latest
+dotnet: 2.1.200
+
+script:
+  - mono .paket/paket restore
+  - dotnet restore PtAst.sln -v n
+  - dotnet build PtAst.sln -c Release -v n
